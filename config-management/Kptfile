@@ -2,18 +2,3 @@ apiVersion: kpt.dev/v1alpha1
 kind: Kptfile
 metadata:
   name: Anthos sample package for Anthos Config Management
-openAPI:
-  definitions:
-    io.k8s.cli.setters.anthos.configmanagement.git.syncrepo:
-      type: string
-      x-k8s-cli:
-        setter:
-          name: anthos.configmanagement.git.syncrepo
-          value: ""
-    io.k8s.cli.setters.memberships:
-      type: array
-      x-k8s-cli:
-        setter:
-          name: memberships
-          listValues:
-          - "gke-cluster-1"
